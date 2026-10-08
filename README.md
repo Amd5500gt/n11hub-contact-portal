@@ -49,7 +49,6 @@ SMTP_PASSWORD="YOUR_ACTUAL_HOSTINGER_PASSWORD"
 CONTACT_TO="support@n11hub.in"
 ```
 
-A template is provided in [`.env.example`](./.env.example).
 
 ---
 
