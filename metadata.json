@@ -1,0 +1,6 @@
+{
+  "name": "N11HUB Support & Contact",
+  "description": "Official support and contact desk for N11HUB and Zenin OS. Get quick assistance from our technical and customer support team.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

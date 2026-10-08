@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 512 512"
+     width="108"
+     height="108">
+  <defs>
+    <!-- Upper Kinetic Blade Gradient -->
+    <linearGradient id="upperBladeGrad"
+                    gradientUnits="userSpaceOnUse"
+                    x1="116" y1="145"
+                    x2="402" y2="205">
+      <stop offset="0%" stop-color="#6750A4" />
+      <stop offset="38%" stop-color="#625B71" />
+      <stop offset="72%" stop-color="#FF6B35" />
+      <stop offset="100%" stop-color="#FFD84D" />
+    </linearGradient>
+
+    <!-- Central Energy Core Gradient -->
+    <linearGradient id="energyCoreGrad"
+                    gradientUnits="userSpaceOnUse"
+                    x1="386" y1="158"
+                    x2="136" y2="352">
+      <stop offset="0%" stop-color="#7D5260" />
+      <stop offset="34%" stop-color="#D000FF" />
+      <stop offset="68%" stop-color="#6750A4" />
+      <stop offset="100%" stop-color="#00C8FF" />
+    </linearGradient>
+
+    <!-- Lower Kinetic Blade Gradient -->
+    <linearGradient id="lowerBladeGrad"
+                    gradientUnits="userSpaceOnUse"
+                    x1="113" y1="362"
+                    x2="396" y2="308">
+      <stop offset="0%" stop-color="#00E5D4" />
+      <stop offset="34%" stop-color="#00BFFF" />
+      <stop offset="68%" stop-color="#6750A4" />
+      <stop offset="100%" stop-color="#7D5260" />
+    </linearGradient>
+  </defs>
+
+  <!-- Scaled group centered around pivot (256, 256) -->
+  <g transform="translate(256, 256) scale(0.76) translate(-256, -256)">
+    <!-- Ambient Ring -->
+    <path d="M256,82 A174,174 0 1,1 256,430 A174,174 0 1,1 256,82 Z"
+          fill="none"
+          stroke="#6750A4"
+          stroke-width="7"
+          stroke-opacity="0.55" />
+
+    <!-- Upper Kinetic Blade -->
+    <path d="M116,150 C158,130 208,117 258,116 C315,115 365,127 402,151 C390,169 373,184 350,194 C319,208 284,215 246,215 H199 C162,215 132,191 116,150 Z"
+          fill="url(#upperBladeGrad)" />
+
+    <!-- Central Energy Core -->
+    <path d="M386,157 C394,163 393,174 383,184 L232,322 C207,345 174,355 136,352 C145,327 162,302 185,281 C207,261 231,244 258,226 L349,166 C363,157 377,153 386,157 Z"
+          fill="url(#energyCoreGrad)" />
+
+    <!-- Lower Kinetic Blade -->
+    <path d="M396,363 C358,386 309,398 256,399 C202,400 151,388 113,362 C125,345 143,331 166,320 C196,306 230,299 269,299 H313 C351,299 380,324 396,363 Z"
+          fill="url(#lowerBladeGrad)" />
+
+    <!-- Top Precision Node -->
+    <circle cx="402" cy="151" r="4.5" fill="#1D1B20" />
+
+    <!-- Bottom Precision Node -->
+    <circle cx="113" cy="362" r="4.5" fill="#1D1B20" />
+  </g>
+</svg>

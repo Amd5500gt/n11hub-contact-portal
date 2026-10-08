@@ -1,0 +1,5 @@
+# robots.txt for https://contact.n11hub.in
+User-agent: *
+Allow: /
+
+Sitemap: https://contact.n11hub.in/sitemap.xml

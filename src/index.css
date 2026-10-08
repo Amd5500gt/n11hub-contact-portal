@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Subtle background orb animations */
+@keyframes floatOrb {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+}
+
+@keyframes floatOrbReverse {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(18px) scale(0.96);
+  }
+}
+
+.animate-orb-1 {
+  animation: floatOrb 18s ease-in-out infinite;
+}
+
+.animate-orb-2 {
+  animation: floatOrbReverse 22s ease-in-out infinite;
+}
+
+.animate-orb-3 {
+  animation: floatOrb 26s ease-in-out infinite;
+}
+
+/* Subtle focus ring style */
+.input-focus-ring {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.input-focus-ring:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
